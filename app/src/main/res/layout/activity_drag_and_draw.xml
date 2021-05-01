@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="20dp"
+                android:text="Lives:"></TextView>
+
+            <ImageView
+                android:id="@+id/lifeOne"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|top"
+                android:background="@drawable/heart">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/lifeTwo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/heart">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/lifeThree"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/heart">
+
+            </ImageView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <com.bignerdranch.android.draganddraw.BoxDrawingView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"></com.bignerdranch.android.draganddraw.BoxDrawingView>
+</LinearLayout>
+
+
+
+
+
+</FrameLayout>
+
+
